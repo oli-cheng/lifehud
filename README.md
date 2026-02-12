@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# 🎮 LifeHUD
 
-## Project info
+**A video-game HUD for real life.** Track quests, manage buffs & debuffs, and equip loadouts — all from a sleek, dark-themed dashboard inspired by WoW and RuneScape.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## ⚡ Pitch
 
-There are several ways of editing your application.
+> What if your daily to-dos felt like quest objectives, your coffee was a +3 Caffeine buff, and your outfit was an equipped loadout? **LifeHUD** gamifies your real-world routines without the bloat — just a fast, satisfying core loop: *see next step → complete it → turn in the quest → gain XP.*
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🧭 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+| Module | What it does |
+|---|---|
+| **🗡️ Quests** | Missions with steps, priorities, tags, and location markers. One-click step completion from the Home HUD. |
+| **✨ Effects** | Buff/debuff timers with live countdowns. Presets for Caffeine, Alcohol, and Sleep Inertia. |
+| **🎒 Equipment** | Outfit slot grids and named loadouts (Gym, Meeting, Travel). Equip in one click. |
+| **📊 Home HUD** | At-a-glance dashboard: active quests, running effects, equipped loadout, XP bar & level. |
+| **🔍 Global Search** | Instantly find any quest, effect, or loadout from the top bar. |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🏗️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React 18** + **TypeScript** + **Vite**
+- **Tailwind CSS** + **shadcn/ui**
+- **localStorage** persistence (zero backend, zero auth)
+- Fully responsive — mobile-first, desktop-excellent
 
-Follow these steps:
+---
+
+## 🚀 Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone & install
 git clone <YOUR_GIT_URL>
+cd lifehud
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Demo data is seeded automatically on first launch. Hit **Settings → Reset Demo Data** to restore it anytime.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🗺️ Routes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Route | Page |
+|---|---|
+| `/` | Home HUD |
+| `/quests` | Quest Log (Backlog / Active / Completed) |
+| `/quests/:id` | Quest Detail & Editor |
+| `/effects` | Effects Tracker |
+| `/equipment` | Equipment & Loadouts |
+| `/settings` | Preferences & Data Reset |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🎯 Core Loop
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+See "Next Step" on Home → Complete it (one click) → All steps done? → Turn In → +XP 🎉
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT
